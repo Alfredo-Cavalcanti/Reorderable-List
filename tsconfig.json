@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "esnext", // Suporte a ES6+ (compatível com React)
+        "module": "commonjs", // Módulos padrão para Node.js
+        "jsx": "react", // Habilita JSX
+        "strict": true, // Ativa todas as verificações estritas
+        "esModuleInterop": true, // Suporte para imports comuns (import/export)
+        "skipLibCheck": true, // Ignora verificações em arquivos de biblioteca
+        "types": ["react", "react-dom"],
+        "lib": ["dom", "esnext"], // Necessário para suportar APIs do DOM
+        "forceConsistentCasingInFileNames": true // Garante consistência em nomes de arquivos
+    },
+    "include": ["src"], // Limita a compilação para arquivos dentro da pasta src
+    "exclude": ["node_modules"] // Exclui a pasta node_modules
+}
